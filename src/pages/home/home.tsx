@@ -18,8 +18,8 @@ const Home = () => {
       </p>
       
       <div className={classes.buttonContainer}>
-        <Button text="Sign In" onClick={() => navigate("/signin")} className={classes.homeButton} />
-        <Button text="Sign Up" onClick={() => navigate("/signup")} className={classes.homeButton} />
+        <Button text="Sign In" onClick={() => navigate("/users/signin")} className={classes.homeButton} />
+        <Button text="Sign Up" onClick={() => navigate("/users/signup")} className={classes.homeButton} />
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const Profile = () => {
     };
 
     getUserProfile();
-  }, [fetchUserProfile, navigate]);
+  }, []);
 
   const handleLogout = () => {
     localStorage.removeItem("accessToken");

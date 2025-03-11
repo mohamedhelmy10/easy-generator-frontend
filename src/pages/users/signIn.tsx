@@ -27,7 +27,7 @@ const SignIn = () => {
     try {
       const { accessToken } = await loginUser({ email, password });
       localStorage.setItem("accessToken", accessToken);
-      navigate("/profile");
+      navigate("/users/profile");
     } catch (error) {
       if (error instanceof Error) {
         const errorResponse = error as unknown as ErrorResponse;

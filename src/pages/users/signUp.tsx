@@ -40,7 +40,7 @@ const SignUp = () => {
     if (Object.values(newErrors).every((err) => err === "")) {
       try {
         await registerUser({ name, email, password });
-        navigate("/signin");
+        navigate("/users/signin");
       } catch (error) {
         console.error("Error during sign up:", error);
       }
